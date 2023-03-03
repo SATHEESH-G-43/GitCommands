@@ -9,7 +9,7 @@ username:
 pwd:
 if failed to push, then
 git pull
-if merge conflict, fix conflict with remote location file and then commit for result
+if merge conflict, fix conflict with remote location file and then commit for result which means copy from remote repository file and paste it in local file,then add,commit and push
 git add <file_name>
 git commit -m "message"
 git push -u orgin master

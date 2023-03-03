@@ -1,0 +1,119 @@
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1
+$ pwd
+/f/Git/Task_1
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1
+$ git init
+Initialized empty Git repository in F:/Git/Task_1/.git/
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ git add BasicGitCommands.txt
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ git commit -m "Commands Updated"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ARUN@DESKTOP-76OBEBG.(none)')
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ omit --global
+bash: omit: command not found
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ ^C
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ git config --global user.email "you@example.com"
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ git config --global user.name "Your Name"
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ git commit -m "Commands are updated"
+[master (root-commit) 4a6bb46] Commands are updated
+ 1 file changed, 39 insertions(+)
+ create mode 100644 BasicGitCommands.txt
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ git remote add origin https://github.com/SATHEESH-G-43/GitCommands
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ git log
+commit 4a6bb46ac5da99c0d8be7061ce6f007a496a8cea (HEAD -> master)
+Author: Your Name <you@example.com>
+Date:   Sat Mar 4 00:34:56 2023 +0530
+
+    Commands are updated
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ git push -u origin master    ........not asking username and password But there is a pop up 
+
+comes to log in into Github account to run this command
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 596 bytes | 596.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SATHEESH-G-43/GitCommands
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ pwd
+/f/Git/Task_1
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   BasicGitCommands.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GitCommandExecution.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$ git log
+commit 4a6bb46ac5da99c0d8be7061ce6f007a496a8cea (HEAD -> master, origin/master)
+Author: Your Name <you@example.com>
+Date:   Sat Mar 4 00:34:56 2023 +0530
+
+    Commands are updated
+
+ARUN@DESKTOP-76OBEBG MINGW64 /f/Git/Task_1 (master)
+$
+
+
