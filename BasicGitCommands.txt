@@ -32,8 +32,10 @@ git status ......Will show un added files.If need to add then git add as usually
 git add .   ....... adds all remaining files
 
 
-
 git checkout <branch-name>
 
 git chechout master
 
+This is very basic for anyone who starts to learn github.
+You need to focus on more basic commands.
+So that you can practice well.
