@@ -1,0 +1,39 @@
+git --version
+
+cd <F:\Git\Task_1>
+
+git init
+
+git add <file_name>
+
+git commit -m <If need, give message for understanding. eg:"Updated my code">
+
+git remote add orgin <command only one time is enough for remote location https://github.com/SATHEESH-G-43?tab=repositories>
+
+git push -u orgin master 
+
+username:
+pwd:
+
+if failed to push, then
+
+git pull
+
+if merge conflict, fix conflict with remote location file and then commit for result
+
+git add <file_name>
+
+git commit -m "message"
+
+git push -u orgin master
+
+git status ......Will show un added files.If need to add then git add as usually
+
+git add .   ....... adds all remaining files
+
+
+
+git checkout <branch-name>
+
+git chechout master
+
